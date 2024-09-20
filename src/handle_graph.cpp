@@ -1,3 +1,4 @@
+#include "absl/log/absl_log.h"
 #include "handlegraph/handle_graph.hpp"
 
 #include "handlegraph/util.hpp"

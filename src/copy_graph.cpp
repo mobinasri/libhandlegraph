@@ -1,3 +1,4 @@
+#include "absl/log/absl_log.h"
 #include "handlegraph/algorithms/copy_graph.hpp"
 
 #include <stdexcept>

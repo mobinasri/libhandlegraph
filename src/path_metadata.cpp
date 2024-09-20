@@ -2,6 +2,7 @@
  * Implement PathMetadata interface's default implementation.
  */
 
+#include "absl/log/absl_log.h"
 #include "handlegraph/path_metadata.hpp"
 #include <sstream>
 

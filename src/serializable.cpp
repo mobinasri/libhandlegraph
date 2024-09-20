@@ -1,3 +1,4 @@
+#include "absl/log/absl_log.h"
 #include "handlegraph/serializable.hpp"
 
 #include <fstream>

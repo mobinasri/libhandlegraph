@@ -4,6 +4,7 @@
  * Implementation of Dijkstra's Algorithm over the bidirected graph.
  */
 
+#include "absl/log/absl_log.h"
 #include "handlegraph/algorithms/dijkstra.hpp"
 
 #include <queue>
