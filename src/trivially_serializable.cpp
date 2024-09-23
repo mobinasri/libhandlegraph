@@ -93,7 +93,7 @@ int TriviallySerializable::open_fd(const std::string& filename) const {
         auto problem = errno;
         std::stringstream ss;
         ss << "Could not save to file " << filename << ": " << ::strerror(problem);
-        ABSL_LOG(FATAL) << ss.str(;
+        ABSL_LOG(FATAL) << ss.str();
     }
     
     return fd;
@@ -106,7 +106,7 @@ void TriviallySerializable::close_fd(int fd) const {
         auto problem = errno;
         std::stringstream ss;
         ss << "Could not close FD: " << ::strerror(problem);
-        ABSL_LOG(FATAL) << ss.str(;
+        ABSL_LOG(FATAL) << ss.str();
     }
 }
 
@@ -145,7 +145,7 @@ void TriviallySerializable::deserialize(const std::string& filename) {
         auto problem = errno;
         std::stringstream ss;
         ss << "Could not load from file " << filename << ": " << ::strerror(problem);
-        ABSL_LOG(FATAL) << ss.str(;
+        ABSL_LOG(FATAL) << ss.str();
     }
     
     // Deserialize from the file
